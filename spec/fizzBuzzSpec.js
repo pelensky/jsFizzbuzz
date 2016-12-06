@@ -14,9 +14,9 @@ describe('FizzBuzz', function() {
       expect(mony.isDivisibleByFive(5)).toMatch('Buzz');
     });
 
-    it('divisible by 15', function(){
-      expect(mony.isDivisibleByFifteen(15)).toBe(true);
-      expect(mony.isDivisibleByFifteen(30)).toBe(true);
+    it('divisible by 15, should print FizzBuzz', function(){
+      expect(mony.isDivisibleByFifteen(15)).toMatch('FizzBuzz');
+
     });
 
   });
@@ -31,8 +31,7 @@ describe('FizzBuzz', function() {
     });
 
     it('divisible by 15', function(){
-      expect(mony.isDivisibleByFifteen(1)).toBe(false);
-      expect(mony.isDivisibleByFifteen(9)).toBe(false);
+      expect(mony.isDivisibleByFifteen(1)).toEqual(1);
     });
   });
 });

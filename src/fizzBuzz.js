@@ -17,5 +17,9 @@ FizzBuzz.prototype.isDivisibleByFive = function(number){
 };
 
 FizzBuzz.prototype.isDivisibleByFifteen = function(number){
-  return number % 15 === 0;
+  if(number % 15 === 0){
+    return 'FizzBuzz';
+  }else{
+    return number;
+  };
 };
