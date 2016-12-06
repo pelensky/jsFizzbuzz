@@ -9,5 +9,5 @@ FizzBuzz.prototype.isDivisibleByFive = function(number){
 };
 
 FizzBuzz.prototype.isDivisibleByFifteen = function(number){
-  return true;
+  return number % 15 === 0;
 };

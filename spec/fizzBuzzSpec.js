@@ -30,6 +30,10 @@ describe('FizzBuzz', function() {
       expect(mony.isDivisibleByFive(1)).toBe(false);
     });
 
+    it('divisible by 15', function(){
+      expect(mony.isDivisibleByFifteen(1)).toBe(false);
+    });
+
   });
 
 });
