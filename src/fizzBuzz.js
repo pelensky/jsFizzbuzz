@@ -5,7 +5,7 @@ FizzBuzz.prototype.isDivisibleByThree = function(number) {
 };
 
 FizzBuzz.prototype.isDivisibleByFive = function(number){
-  return true;
+  return number % 5 === 0;
 };
 
 FizzBuzz.prototype.isDivisibleByFifteen = function(number){

@@ -26,6 +26,10 @@ describe('FizzBuzz', function() {
       expect(mony.isDivisibleByThree(1)).toBe(false);
     });
 
+    it('divisible by 5', function(){
+      expect(mony.isDivisibleByFive(1)).toBe(false);
+    });
+
   });
 
 });
