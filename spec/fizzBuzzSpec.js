@@ -13,6 +13,11 @@ describe('FizzBuzz', function() {
       expect(mony.isDivisibleByFive(5)).toBe(true);
     });
 
+    it('divisible by 15', function(){
+      mony = new FizzBuzz();
+      expect(mony.isDivisibleByFifteen(15)).toBe(true);
+    });
+
   });
 
 });
