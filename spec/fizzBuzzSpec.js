@@ -37,7 +37,7 @@ describe('FizzBuzz', function() {
 
   describe('play the game', function() {
     it('says Fizz when 3 is passed', function(){
-      expect(mony.says(3)).toMatch('Fizz');
+      expect(number.says(3)).toMatch('Fizz');
     });
 
     it('says Buzz when 5 is passed', function(){
