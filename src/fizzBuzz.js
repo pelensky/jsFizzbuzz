@@ -6,9 +6,14 @@ FizzBuzz.prototype.isDivisibleByThree = function(number) {
   }else{
     return number;
   };
+};
 
 FizzBuzz.prototype.isDivisibleByFive = function(number){
-  return number % 5 === 0;
+  if(number % 5 === 0){
+    return 'Buzz';
+  }else{
+    return number;
+  };
 };
 
 FizzBuzz.prototype.isDivisibleByFifteen = function(number){
