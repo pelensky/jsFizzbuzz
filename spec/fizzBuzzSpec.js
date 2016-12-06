@@ -21,4 +21,11 @@ describe('FizzBuzz', function() {
 
   });
 
+  describe('knows when a number is not', function () {
+    it('divisible by 3', function(){
+      expect(mony.isDivisibleByThree(1)).toBe(false);
+    });
+
+  });
+
 });
