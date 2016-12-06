@@ -6,7 +6,7 @@ describe('FizzBuzz', function() {
   });
 
   describe('knows when a number is', function() {
-    it('when divisible by 3 should print Fizz', function(){
+    it('when divisible by 3, should print Fizz', function(){
       expect(mony.isDivisibleByThree(3)).toMatch('Fizz');
     });
 
@@ -26,11 +26,11 @@ describe('FizzBuzz', function() {
       expect(mony.isDivisibleByThree(1)).toEqual(1);
     });
 
-    it('divisible by 5', function(){
+    it('divisible by 5, should print the number', function(){
       expect(mony.isDivisibleByFive(1)).toEqual(1);
     });
 
-    it('divisible by 15', function(){
+    it('divisible by 15, should print the number', function(){
       expect(mony.isDivisibleByFifteen(1)).toEqual(1);
     });
   });
