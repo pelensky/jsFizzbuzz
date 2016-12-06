@@ -1,19 +1,11 @@
 var FizzBuzz = function(){};
 
 FizzBuzz.prototype.isDivisibleByThree = function(number) {
-  if(number % 3 === 0){
-    return 'Fizz';
-  }else{
-    return number;
-  };
+  return number % 3 === 0;
 };
 
 FizzBuzz.prototype.isDivisibleByFive = function(number){
-  if(number % 5 === 0){
-    return 'Buzz';
-  }else{
-    return number;
-  };
+  return number % 5 === 0;
 };
 
 FizzBuzz.prototype.isDivisibleByFifteen = function(number){
@@ -25,5 +17,11 @@ FizzBuzz.prototype.isDivisibleByFifteen = function(number){
 };
 
 FizzBuzz.prototype.says = function(number){
-  return this.isDivisibleByThree(number);
+  if(this.isDivisibleByThree(number)){
+    return 'Fizz';
+  }else if(this.isDivisibleByFive(number)){
+    return 'Buzz';
+  }else{
+    return number;
+  };
 };
