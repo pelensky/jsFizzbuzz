@@ -15,7 +15,7 @@ describe('FizzBuzz', function() {
     });
 
     it('divisible by 15, should print FizzBuzz', function(){
-      expect(mony.isDivisibleByFifteen(15)).toMatch('FizzBuzz');
+      expect(mony.isDivisibleByFifteen(15)).toBe(true);
 
     });
 
@@ -31,7 +31,7 @@ describe('FizzBuzz', function() {
     });
 
     it('divisible by 15, should print the number', function(){
-      expect(mony.isDivisibleByFifteen(1)).toEqual(1);
+      expect(mony.isDivisibleByFifteen(1)).toBe(false);
     });
   });
 
@@ -42,6 +42,16 @@ describe('FizzBuzz', function() {
 
     it('says Buzz when 5 is passed', function(){
       expect(mony.says(5)).toMatch('Buzz');
+    });
+
+    it('says Fizzbuzz when 15 is passed', function(){
+      expect(mony.says(15)).toMatch('FizzBuzz');
+    });
+
+    it('says the number when something not divisible by 3 or 5 is passed', function(){
+      expect(mony.says(1)).toEqual(1);
+      expect(mony.says(4)).toEqual(4);
+      expect(mony.says(13)).toEqual(13);
     });
   });
 });
