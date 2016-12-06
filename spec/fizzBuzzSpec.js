@@ -5,8 +5,8 @@ describe('FizzBuzz', function() {
     mony = new FizzBuzz();
   });
 
-  describe('knows when a number is', function() {
-    it('when divisible by 3, should print Fizz', function(){
+  describe('when a number is', function() {
+    it('divisible by 3, should print Fizz', function(){
       expect(mony.isDivisibleByThree(3)).toMatch('Fizz');
     });
 
@@ -21,7 +21,7 @@ describe('FizzBuzz', function() {
 
   });
 
-  describe('knows when a number is not', function () {
+  describe('when a number is not', function () {
     it('divisible by 3, should print the number', function(){
       expect(mony.isDivisibleByThree(1)).toEqual(1);
     });
