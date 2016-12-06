@@ -34,4 +34,10 @@ describe('FizzBuzz', function() {
       expect(mony.isDivisibleByFifteen(1)).toEqual(1);
     });
   });
+
+  describe('play the game', function() {
+    it('says Fizz when 3 is passed', function(){
+      expect(mony.says(3)).toMatch('Fizz');
+    });
+  });
 });
